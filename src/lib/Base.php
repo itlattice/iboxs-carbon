@@ -1,8 +1,8 @@
 <?php
 
-namespace iboxs\payment\lib;
+namespace iboxs\carbon\lib;
 
 class Base
 {
-
+    public $time;
 }

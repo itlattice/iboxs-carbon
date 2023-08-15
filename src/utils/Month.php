@@ -2,15 +2,15 @@
 
 namespace iboxs\carbon\utils;
 
-trait Years
+trait Month
 {
-    public function AddYears($years=1){
+    public function AddMonths($months=1){
         $time=strtotime($this->time);
         $str='';
-        if($years>0){
-            $str="+ {$years} years";
+        if($months>0){
+            $str="+ {$months} months";
         } else{
-            $str="- {$years} years";
+            $str="- {$months} months";
         }
         $time=strtotime($str,$time);
         $this->time=date('Y-m-d H:i:s',$time);

@@ -2,15 +2,15 @@
 
 namespace iboxs\carbon\utils;
 
-trait Minutes
+trait Sessions
 {
-    public function AddMinuts($minuts=1){
+    public function AddSession($number=1){
         $time=strtotime($this->time);
         $str='';
-        if($minuts>0){
-            $str="+ {$minuts} minutes";
+        if($number>0){
+            $str="+ {$number} minutes";
         } else{
-            $str="- {$minuts} minutes";
+            $str="- {$number} minutes";
         }
         $time=strtotime($str,$time);
         $this->time=date('Y-m-d H:i:s',$time);

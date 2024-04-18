@@ -3,11 +3,10 @@
     "description": "时间操作器",
     "type": "1",
     "license": "MIT",
-    "version": "1.0.0",
     "authors": [
         {
-            "name": "zqu",
-            "email": "zqu1016@qq.com"
+            "name": "itlattice",
+            "email": "itlattice@gmail.com"
         }
     ],
     "require": {
